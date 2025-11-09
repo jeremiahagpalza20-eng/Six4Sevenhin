@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>SIX4SEVEN</title>
+      <style>
+      
+      body {
+      font-family: 'Syne', sans-serif; 
+          }
+      
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      .image-container {
+        text-align: center;
+        width: 100%;
+      }
+      
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      
+      </style>
+    </head>
+  
+  
+    <body class="w3-white">
+        <!-- Image and name container. Change to your picture here. -->
+      <div class="image-container">
+      <img src="six4seven.png" class="w3-margin" alt="Person" max-width="100%" height="200px" style="border-radius: 50%;">
+      
+       <!-- Content. Add your bio here. -->
+       <div class="w3-center">
+       <h2 class="w3-text-black"><strong>SIX4SEVEN</strong></h2>
+       <p>We Thank you for visiting our official website! . if you want to join click link down below.</p>
+       </div>
+  
+<style>
+      html, body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        height: 200%;
+        color: white;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */
+        text-align: center;
+      }
+
+      .container {
+        width: 200%;
+        max-width: 600px;
+      }
+
+      .w3-button {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        font-size: 18px;
+        background-color: #00bcd4 !important;
+        color: #fff !important;
+        border-radius: 50px;
+        transition: all 0.3s;
+      }
+
+      .w3-button:hover {
+        background-color: #0097a7 !important;
+        transform: scale(1.03);
+      }
+
+      .countdown {
+        display: block;
+        font-size: 14px;
+        margin-top: 5px;
+        color: #e0e0e0;
+      }
+    </style>
+
+       <!-- Buttons -->
+      <a href="#" id="btn1" class="w3-button">FOUNDER<span id="cd1" class="countdown"></span></a>
+      <a href="#" id="btn2" class="w3-button">S4S GC<span id="cd2" class="countdown"></span></a>
+      <a href="#" id="btn3" class="w3-button">INSTAGRAM <span id="cd3" class="countdown"></span></a>
+      <a href="#" id="btn4" class="w3-button">TELEGRAM COMMUNITY CHAT<span id="cd4" class="countdown"></span></a>
+ 
+
+    <script>
+      // Function for per-button countdown + redirect
+      function setupCountdown(buttonId, countdownId, seconds, redirectUrl) {
+        const btn = document.getElementById(buttonId);
+        const cd = document.getElementById(countdownId);
+
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          let timeLeft = seconds;
+          cd.innerHTML = "Redirecting in " + timeLeft + "s...";
+          btn.style.pointerEvents = "none"; // Disable click
+
+          const timer = setInterval(() => {
+            timeLeft--;
+            cd.innerHTML = "Redirecting in " + timeLeft + "s...";
+            if (timeLeft <= 0) {
+              clearInterval(timer);
+              cd.innerHTML = "Redirecting...";
+              window.open(redirectUrl, "_blank");
+              btn.style.pointerEvents = "auto";
+              cd.innerHTML = "";
+            }
+          }, 1000);
+        });
+      }
+
+      // Assign countdowns + destinations
+      setupCountdown("btn1", "cd1", 5, "https://www.facebook.com/dainianlimo/");
+      setupCountdown("btn2", "cd2", 10, "https://m.me/j/AbY6EZHxE0kCs8H-/");
+      setupCountdown("btn3", "cd3", 20, "https://www.instagram.com/six4seven.official?igsh=aGlnajU1NWl2MTJ5");
+      setupCountdown("btn4", "cd4", 30, "https://t.me/+6an_Wr_sW684ODk1");
+    </script>
+  
+ 
+<!-- 🎵 MUSIC BUTTON -->
+<button id="musicBtn" onclick="toggleMusic()">🔈 Turn On</button>
+
+<!-- 🎬 Hidden Background Video --> <video id="bgVideo" autoplay loop muted> <source src="six4seven.mp4" type="video/mp4"> </video> <!-- 🎧 Background Music --> <audio id="bgMusic" loop> <source src="pagsamo.mp3" type="audio/mpeg"> </audio> <style> body { margin: 0; overflow: hidden; background: #000; height: 100vh; display: flex; justify-content: center; align-items: center; } /* 🎥 Hidden video (lumalabas lang pag naka-on) */ #bgVideo { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0; transition: opacity 1s ease-in-out; } /* 🔘 Music Button sa taas na gilid */ #musicBtn { position: fixed; top: 20px; right: 25px; background: linear-gradient(145deg, #1e1e1e, #292929); color: #00ffff; border: none; border-radius: 50px; padding: 10px 20px; font-size: 16px; cursor: pointer; box-shadow: 4px 4px 10px rgba(0,0,0,0.7), -4px -4px 10px rgba(255,255,255,0.05); transition: all 0.3s ease; text-shadow: 0 0 5px #00ffff; } /* ✨ Hover glow effect */ #musicBtn:hover { color: white; background: linear-gradient(145deg, #00cccc, #007777); box-shadow: 0 0 20px rgba(0,255,255,0.6), 0 0 40px rgba(0,255,255,0.3); transform: scale(1.08); } /* 🖱️ Click animation */ #musicBtn:active { transform: scale(0.95); } </style> <script> const music = document.getElementById('bgMusic'); const video = document.getElementById('bgVideo'); const btn = document.getElementById('musicBtn'); let turnedOn = false; function toggleMusic() { if (!turnedOn) { music.play(); video.muted = false; video.style.opacity = 1; btn.textContent = "🔇 Turn Off"; btn.style.background = "linear-gradient(145deg, #ff0066, #660022)"; turnedOn = true; } else { music.pause(); video.muted = true; video.style.opacity = 0; btn.textContent = "🔈 Turn On"; btn.style.background = "linear-gradient(145deg, #1e1e1e, #292929)"; turnedOn = false; } } 
+</script>
+ 
+  </body>  
+  </html>
